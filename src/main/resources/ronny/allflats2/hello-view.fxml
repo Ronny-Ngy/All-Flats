@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ronny.allflats2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label fx:id="welcomeText"/>
+    <Text text="Number of vertices"/>
+    <TextField fx:id="amtVertices"/>
+    <Text text="Edge Set in the form of [[1,2],[4,5],...,[7,6]]"/>
+    <TextArea fx:id="edgeSet"/>
+    <Text text="name of the file"/>
+    <TextField fx:id="fileName"/>
+    <Button text="Calculate" onAction="#calculate"/>
+</VBox>
